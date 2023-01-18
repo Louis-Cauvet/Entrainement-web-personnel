@@ -1,0 +1,1364 @@
+:root{
+    --noir1: #121216;
+    --noir2: #191922;
+    --noir3: #23232D;
+    --gris:  #9e9ea3;
+    --grisBordure : #464649;
+    --blanc: whitesmoke;
+    --police1: Helvetica, Arial, sans-serif;
+    --police2: Tahoma, Helvetica, sans-serif;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    position: relative;
+    background-color: var(--noir1);   
+    height: 100%;
+    min-height: 100%;
+    min-width: 320px;
+    margin: 0;
+    padding-bottom: 970px;
+}
+
+h1{
+    font-family: var(--police2);
+    font-size: 18px; 
+    color: var(--blanc);
+    margin-bottom: 2px;
+}
+
+h2{
+    font-family: var(--police1);
+    font-size: 14px; 
+    color: var(--gris);
+    margin: 0px;
+}
+
+h3{
+    font-family: var(--police2);
+    font-weight: lighter;
+    font-size: 14px; 
+    color: var(--blanc);
+    text-align: center;
+    margin-top: 0.5px;
+}
+
+a{
+    color: var(--blanc);
+    font-family: var(--police2);
+    font-weight: lighter;
+    font-size: 13px; 
+    text-decoration: none; 
+    margin: 0% 2%;    
+}
+
+a:hover{
+    text-decoration: underline;   
+}
+
+#imgLogo{
+    position: absolute;
+    top: -2.5%;
+    left: 4%;
+    width: 130px;
+    height: auto;
+    z-index: 3;
+    cursor: pointer; 
+}
+
+.bandeau{
+    position: fixed;
+    bottom:0%;
+    width: 100%;
+    height: 7%;
+    background-color: var(--noir2);
+    z-index : 1;  
+}
+
+.flexMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+.catMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.menuLogo{
+    width: 18px;
+    height: 18px;
+}
+
+.titreCat{
+    color: var(--blanc);
+    font-family: var(--police1);
+    font-size: 10px;
+}
+
+.catChoisie{
+    opacity: 1;
+}
+
+.catPerso{
+    display: none;
+}
+
+.principal{
+    width: 100%;
+    position: relative;
+}
+
+.barreSup{
+    right: 5%;
+    top: 2%;
+    width: 30%;
+    height: 20px;
+    background-color: var(--noir1);
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+#logoRecherche{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+#recherche{
+    display: none;
+}
+
+#logoNotifs{
+    width: 20px;
+    height: 20px;
+    cursor: pointer; 
+    margin-left: 10%;
+}
+
+#logoCompte{
+    width: 25px;
+    height: 25px;
+    background-color: #cfcfd7;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer; 
+    margin-left: 10%;  
+    position: relative;
+}
+
+#photoProfil{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.principalContenu{
+    padding: 50px 10px;
+}
+
+.mixFlow{
+    width: 100%;
+    margin: 4% 0% 7% 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.miniFlow{
+    position:relative;
+    padding-left: 3%;
+}
+
+.fondFlow{
+    height: 98px;
+    width: 100px;
+}
+
+#texteFlow{
+    position:absolute;
+    font-family: var(--police1);
+    font-size: 28px; 
+    font-weight: bold;
+    color: var(--blanc);
+    text-shadow: 3px 3px 2px var(--noir1); 
+    top: 6px;
+    right: 24px;
+}
+
+.catFlow{
+    height: 100px;
+    width: 100px;
+    border-style: hidden;
+    border-radius: 50%;
+}
+
+.cat1{
+    background-image: linear-gradient(to right, rgb(92, 7, 92),rgb(230, 82, 230)); 
+    position: relative;
+}
+
+.cat2{
+    background-image: linear-gradient(to right, rgb(170, 77, 6), rgb(243, 145, 92));  
+    position: relative;
+}
+
+.cat3{
+    background-image: linear-gradient(to right, rgb(10, 136, 27), rgb(74, 235, 138)); 
+    position: relative;
+}
+
+.cat4{
+    background-image: linear-gradient(to right, rgb(5, 5, 103), rgb(41, 41, 232)); 
+    position: relative; 
+}
+
+.cat5{
+    background-image: linear-gradient(to right, rgb(153, 6, 30), rgb(233, 91, 115));
+    position: relative;  
+}
+
+.cat6{
+    background-image: linear-gradient(to right, rgb(17, 76, 153), rgb(105, 208, 234)); 
+    position: relative; 
+}
+
+.imgFlow{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.contenus{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    overflow: scroll;
+}
+
+.contenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.margeGauche{
+    margin-left: 10%;
+}
+
+.multi-images{
+    width: 210px;
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+    position: relative;
+    margin-top: 5%;
+}
+
+#fondNouveautés{
+    grid-area: 1/1/2/3;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, #1B81E6, #2BCAC6); 
+    position: relative;
+}
+
+#textePourVous{
+    position: absolute;
+    font-family: var(--police1) ;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px var(--noir1);
+    font-size: 160%;
+    color:var(--blanc);
+    bottom: 0px;
+    left: 15px;
+}
+
+.imgQuatuor{
+    width: 100%;
+    height: 100px;
+}
+
+.coin1{
+    border-top-left-radius: 5%;
+}
+
+.coin2{
+    border-top-right-radius: 5%;
+}
+
+.coin3{
+    border-bottom-left-radius: 5%;
+}
+
+.coin4{
+    border-bottom-right-radius: 5%;
+}
+
+.boutonPlay{
+    position : absolute;
+    width: 20%;
+    height: 20%;
+    top: 40%;
+    left: 40%;
+    background-color: rgb(232, 229, 229);
+    border-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.play{
+    position : absolute;
+    width: 40%;
+    top: 30%;
+    left: 35%;
+}
+
+.commArtistes{
+    text-align: left !important;
+    margin-top: 2%;
+    width: 210px;
+    word-wrap: break-word;
+}
+
+.navigation{
+    display: none;
+}
+
+.genre{
+    position: relative;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fondGenre{
+    border-radius: 3%;
+    width: 200px;
+    height: 100px;
+}
+
+.titreGenre{
+    position: absolute;
+    top: 18%;
+    font-family:var(--police2);
+    font-size: 22px;
+    font-weight: bold;
+    color:var(--blanc);
+    text-shadow: 2px 2px 2px var(--noir1);
+}
+
+.enCours{
+    position: fixed;
+    bottom: 7%;
+    z-index: 2;
+    height: 8%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(17, 76, 153), rgb(105, 208, 234)); 
+    display: flex;
+    align-items: center;
+}
+
+.playEnCours{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0% 4%;
+}
+
+.divEnCours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.iconePlayEnCours{
+    width: 80%;
+    height: 100%;
+}
+
+#iconePrécédent{
+    display: none;
+}
+
+#iconeSuivant{
+    position: absolute;
+    right: 4%;
+}
+
+.musiqueEnCours{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.infobulle{
+    display: none;
+}
+
+.cachéTel{
+    display: none;
+}
+
+.musiqueEnCoursHaut{
+    color: var(--blanc);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+#titre{
+    font-weight: bolder;
+}
+
+.iconesEnCoursHaut{
+    position: absolute;
+    right: 0%;
+}
+
+.iconeOptionEnCours{
+    width: 20px;
+    height: 20px;
+}
+
+.musiqueEnCoursBas{
+    display: none;
+}
+
+.optionsEnCours{
+    display: none;
+}
+
+.attenteEnCours{
+    display: none;
+}
+
+.liens{
+    width: 100%;
+    margin: 5% 0%;
+    border-top: 5px solid rgb(180, 174, 174);
+}
+
+.enteteLiens{
+    margin-left:1%;
+}
+
+.imgLien{
+    width: 20px;
+    height: 20px;
+}
+
+
+@media only screen and (min-width: 375px) {
+
+    body{
+        padding-bottom: 860px;
+    }
+
+    .titreCat{
+        font-size: 12px;
+    }
+
+    #photoProfil{
+        top: 3px;
+    }
+}
+
+
+@media only screen and (min-width: 425px) {
+
+    body{
+        padding-bottom: 960px;
+    }
+
+    h1{
+        font-size: 20px; 
+    }
+    
+    h2{
+        font-size: 16px; 
+    }
+    
+    h3{
+        font-size: 16px; 
+    }
+
+            
+    a{
+        font-size: 16px;  
+    }
+
+    #imgLogo{
+        top: -3%;
+        width: 150px;
+    }
+
+    #logoRecherche{
+        width: 25px;
+        height: 25px;
+    }
+
+    #logoNotifs{
+        width: 25px;
+        height: 25px;
+    }
+
+    #logoCompte{
+        width: 30px;
+        height: 30px;
+    }
+
+    #photoProfil{
+        top: 2px;
+        right: 2px;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    body{
+        padding-bottom: 1000px;
+    }
+
+    h1{
+        margin-bottom:0px;
+    }
+
+    h2{
+        font-size: 15px;
+        font-weight: 100;
+        margin-top: 0.5px;
+    }
+
+    h3{
+        font-size: 15px;     
+    }
+
+    a{
+        font-size: 14px; 
+    }
+
+    #imgLogo{
+        top: -3%;   
+        left: 1%;   
+        width: 12%;
+        min-width: 95px;
+        position: fixed;
+    }
+
+    .bandeau{
+        width: 14%;
+        height: 100%;
+        left: 0%;
+        top: 0%;
+        border-right: 1px solid var(--grisBordure);
+        position: fixed;
+    }
+
+    .flexMenu{
+        position: absolute;
+        height: 60%;
+        top: 12%;
+        flex-direction: column;
+        align-items:flex-start;
+        margin-left: 6%;
+    }
+
+    .catMenu{
+        flex-direction: row;
+        justify-content: flex-start;
+        opacity: 1;
+    }
+
+    .menuLogo{
+        height: 24px;
+        width: 24px;
+        vertical-align: middle;
+    }
+
+    .titreCat{
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 10%;
+        cursor: pointer; 
+    }
+
+    .catChoisie{
+        color: #EF5466;
+    }
+
+    .catPerso{
+        display: initial;
+        margin-left: 10%;
+    }
+
+    .titreCatPerso{
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 12px;
+        color: #89898f;
+        cursor: pointer; 
+        transition: font-size 1s, color 1s, text-shadow 1s;
+    }
+
+    .principal{
+        position: static;
+        width: 85%;
+        top: 0%;
+        margin-left: 15%;
+    }
+
+    .barreSup{
+        width: 85.8%;
+        height: 8%;
+        right: 0%;
+        top: 0%;
+        border-left: 1px solid var(--grisBordure);
+        border-bottom: 1px solid var(--grisBordure);
+        justify-content: flex-start; 
+        position: fixed;
+    }
+
+    #logoRecherche{
+        margin: 22px 15px 20px 20px;
+    }
+
+    #recherche{
+        display: initial;
+        height: auto;
+        width: 85%;
+        background-color: var(--noir1);
+        color: var(--blanc);
+        font-size: 16px;
+        font-family: var(--police2);
+        border: none;
+    }
+
+    #recherche::placeholder{
+        color : #9f9fa5;
+    }
+
+    input:focus {
+        outline:  none;
+    }
+
+    #logoNotifs{
+        width: 20px;
+        height: 20px;
+        justify-self: flex-end;
+        margin-left: 2%;
+    }
+
+    #logoCompte{
+        width: 30px;
+        height: 30px;
+        justify-self: flex-end;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #photoProfil{
+        top: 1px;
+        right: 1px;
+    }
+
+    .mixFlow{
+        margin: 4% 0% 4% 0%;
+        overflow:auto;
+    }
+
+    .margeGauche{
+        margin-left: 5%;
+    }
+
+    .enCours{
+        background-image: none;
+        background-color: var(--noir3);
+        bottom: 0%;
+        height: 11%;
+        border-top: 1px solid var(--grisBordure);
+        display: grid;
+        grid-template-columns: 13% 64% 23% 0%;
+    }
+
+    .divEnCours{
+        width: 15px;
+        height: 15px;
+    }
+
+    .playEnCours{
+        grid-column: 1/2;  
+        padding: 0%;
+        align-items: center;  
+        justify-content: space-around;   
+    }
+
+    #iconePrécédent{
+        display: initial;
+    }
+
+    .divGros{
+        width: 20px;
+        height: 20px;
+    }
+
+    #iconeSuivant{
+        position: static; 
+    }
+
+    .musiqueEnCours{
+        grid-column: 2/3; 
+        margin: 0% 4%;
+        width: 92%;
+        height: 100%;
+        position: relative;
+    }
+
+    .musiqueEnCoursHaut{
+        width: 100%;
+        position: absolute;
+        top: 19%;
+    }
+
+    .iconesEnCoursHaut{
+        top: 5%;
+        width: 16%;
+        padding-right: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;  
+        align-items: center; 
+    }
+
+    .iconeOptionEnCours{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cachéTel{
+        display: initial;
+    }
+
+    #titre{
+        font-weight:normal;
+        font-size: 14px;
+    }
+
+    #interprête{
+        font-size: 14px;
+        overflow: hidden;
+        word-wrap: break-word; 
+    }
+
+    .musiqueEnCoursBas{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+        bottom: 16%;
+    }
+
+    .durée{
+        font-size: 12px;
+        color: var(--gris);
+    }
+
+    .curseurMusique{
+        position: relative;
+        width: 82%;
+        height: 3px; 
+        border-radius: 10px;
+        background-image: linear-gradient(to right, rgb(17, 76, 153),rgb(17, 76, 153),rgb(17, 76, 153), var(--gris),var(--gris));
+    }
+
+    .optionsEnCours{
+        grid-column: 3/4; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .liens{
+        width: 86%;
+        margin: 0% 14%;
+    }
+
+    .lien{
+        margin-left: 2%;
+        margin-top: 5px;
+    }
+
+    .imgLien{
+        width: 22px;
+        height: 22px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #imgLogo{
+        top: -5%;    
+        width: 11%;
+    }
+
+    .flexMenu{
+        top: 14%;
+        margin-left: 12%;
+    }
+
+    .titreCat{
+        font-size: 16px;
+        margin-left: 12%;
+    }
+
+    .titreCat:hover{
+        animation-name: rainbowMenu !important;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: -0.2s;
+    }
+
+    .catPerso{
+        margin-left: 12%;
+    }
+
+    .titreCatPerso{
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 12px;
+        color: #89898f;
+        cursor: pointer; 
+        transition: font-size 1s, color 1s, text-shadow 1s;
+    }
+    
+    .titreCatPerso:hover{
+        font-size:  13px;
+        color: whitesmoke;
+        text-shadow: -3px 3px 2px rgb(125, 120, 120);
+    }
+
+    .barreSup{
+        width: 85.9%;
+    }
+
+    #logoNotifs:hover{
+        animation-name: vibra;
+        animation-duration: 2s;
+    }
+
+    #logoCompte:hover{
+        background-color: #464649;
+        border-radius: 50%;
+    }
+
+    #photoProfil{
+        right: 2px;
+    }
+
+    .miniFlow{
+        padding-left: 1%;
+    }
+
+    #texteFlow{
+        transition: width 0.2s, height 0.5s, top 0.1s, right 0.1s;
+    }
+
+    #texteFlow:hover{
+        cursor:pointer;
+        font-size: 30px; 
+        top: 4px;
+        right: 21px;
+    }
+
+    .imgFlow{
+        transition: width 0.2s, height 0.5s, top 0.1s, right 0.1s;
+    }
+
+    .imgFlow:hover{
+        width: 65px;
+        height: 65px;
+        top: 20px;
+        right: 16px;
+        filter: drop-shadow(8px 5px 3px rgb(58, 55, 55));
+    }
+
+    .multi-images:hover{
+        box-shadow: 10px 10px 5px rgb(0, 0, 0);   
+    }
+
+    .boutonPlay:hover{
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;       
+    }
+
+    .commArtistes{
+        font-size: 14px;;
+    }
+
+    .genre{
+        opacity:0.85;
+    }
+
+    .genre:hover{
+        opacity: 1;
+        box-shadow: 10px 10px 5px rgb(0, 0, 0);  
+    }
+
+    .enCours{
+        grid-template-columns: 12% 58% 14% 16%;
+    }
+
+    .infobulle{
+        display: initial;
+        position: absolute;
+        top: -30px;
+        background-color: #32323D;
+        color: whitesmoke;
+        font-size: 14px;
+        white-space: nowrap;
+        border-radius: 5%;
+        padding: 10% 30%;
+        z-index: 1;
+        transform: scale(0) rotateZ(-180deg);
+        transition: 1s;
+    }
+
+    .infobulle::before{
+        content:'';
+        position: absolute;
+        bottom: -30%;
+        left: 40%;
+        border-top: 8px solid #32323D;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+    }
+
+    .divEnCours:hover > .infobulle{            /* on modifie l'infobulle enfant de l'élément divEnCours losrque celui-çi est survolé */
+        transform: scale(1) rotateZ(0deg);
+    }
+
+    .iconesEnCoursHaut > .divEnCours > .infobulle{
+        display: none;
+    }
+
+    .musiqueEnCoursHaut{
+        margin-left: 2%;
+    }
+
+    #titre{
+        font-size: 15px;
+    }
+
+    #interprête{
+        font-size: 15px;
+    }
+
+    .iconesEnCoursHaut{
+        width: 12%;
+        margin-right: 2%;
+    }
+
+    .durée{
+        font-size: 13px; 
+    }
+
+    .curseurMusique{
+        height: 2px;
+    }
+
+    .curseurMusique:hover{
+        height: 4px;
+    }
+
+    .rondCurseur{
+        background-color: whitesmoke;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%; 
+        position: absolute;  
+        bottom: -100%; 
+        left: 65%;
+        opacity: 0;
+    }
+
+    .curseurMusique:hover > .rondCurseur{
+        opacity: 1;
+    }
+
+    .attenteEnCours{
+        grid-column: 4/5; 
+        display: flex;
+        align-items: center;
+        height: 70%;
+    }
+
+    .divAttente{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-left: 0.5px solid var(--grisBordure);
+        height: 100%;
+        width: 80%;
+        margin-left: 5%;
+        padding-left: 4%;
+    }
+
+    .divAttente:hover{
+        background-color: #42424C;
+        border-left: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .miniature{
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        margin-left: 10%;
+    }
+
+    #fileAttente{
+        font-family: var(--police1);
+        color: var(--blanc);
+        font-size: 12px;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px) {
+
+    body{
+        padding-bottom: 1070px;
+    }
+
+    h1{
+        font-size: 24px; 
+    }
+    
+    h2{
+        font-size: 19px; 
+    }
+
+    h3{
+        font-size: 18px; 
+    }
+    
+    a{
+        margin: 0% 1%;
+    }
+
+    .titreCat{
+        font-size: 20px;
+        margin-left: 15%;
+    }
+
+    .catPerso{
+        margin-left: 15%;
+    }
+
+    .titreCatPerso{
+        font-size: 14px;
+    }
+
+    .titreCatPerso:hover{
+        font-size:  16px;
+    }
+
+    #recherche::placeholder{
+       font-size: 18px;
+    }
+
+    #logoNotifs{
+        width: 25px;
+        height: 25px;
+    }
+
+    #logoCompte{
+        width: 35px;
+        height: 35px;
+    }
+
+    #photoProfil{
+        top: 3px;
+        right: 3px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .principalContenu{
+        padding: 70px 10px;
+    }
+
+    .mixFlow{
+        width: 97%;
+        margin: 2% 0% 2% 0%;
+        overflow:auto;
+    }
+
+    .miniFlow{
+        padding-left: 0%;
+    }
+    
+    .fondFlow{
+        height: 128px;
+        width: 130px;
+    }
+
+    .catFlow{
+        height: 130px;
+        width: 130px;
+    }
+
+    #texteFlow{
+        font-size: 34px; 
+        top: 10px;
+        right: 31px;
+    }
+
+    #texteFlow:hover{
+        font-size: 36px; 
+        top: 9px;
+        right: 28px;
+    }
+
+    .imgFlow{
+        width: 80px;
+        height: 80px;
+        top: 25px;
+        right: 23px;
+    }
+    
+    .imgFlow:hover{
+        width: 82px;
+        height: 82px;
+        top: 25px;
+        right: 21px;
+    }
+
+    .contenus{
+        width: 95%;
+        margin-left: 2%;
+        overflow: auto;
+    }
+
+    .multi-images{
+        width: 230px;
+        height: 230px;
+        margin-top: 3%;
+    }
+
+    #fondNouveautés{
+        height: 115px;
+    }
+
+    #textePourVous{
+        font-size: 180%;
+        bottom: 0px;
+        left: 20px;
+    }
+
+    .imgQuatuor{
+        width: 100%;
+        height: 115px;
+    }
+
+    .commArtistes{
+        font-size: 18px;;
+    }
+
+    .margeGauche{
+        margin-left: 0%;
+    }
+
+    .enteteGenres{
+        margin-left: 2%;
+        margin-bottom: -1.5%;
+        position: relative;
+    }
+
+    .navigation{
+        display: initial;
+        position: absolute;
+        right: 3%;
+        top: -5%;
+    }
+
+    .précédent{
+        width: 30px;
+        height: 30px;
+        cursor: not-allowed;
+        opacity: 0.3;
+    }
+
+    .suivant{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .suivant:hover{
+        background-color: #636366;
+        opacity: 0.8;
+    }
+
+    .fondGenre{
+        width: 240px;
+        height: 115px;
+    }
+
+    .enCours{
+        grid-template-columns: 13% 64% 12% 12%;
+    }
+
+    .divEnCours{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .divEnCours:hover{
+        background-color: #636366;
+        opacity: 0.9;
+    }
+
+    .iconePlayEnCours{
+        width: 25px;
+        height: 25px;
+    }
+    
+    .musiqueEnCours{
+        width: 90%;
+        justify-content: center;
+    }
+
+    #titre{
+        font-size: 16px;
+        margin-left: 1%;    
+    }
+
+    #interprête{
+        font-size: 16px;
+        margin-right: 1%; 
+    }
+
+    .musiqueEnCoursHaut{
+        width: 82%;
+        top: 23%;
+    }
+
+    .iconesEnCoursHaut{
+        width: 13%;
+        top: -15%;
+        margin-right: 0%;
+    }
+
+    .iconeOptionEnCours{
+        width: 70%;
+        height: 70%;
+    }
+
+    .musiqueEnCoursBas{
+        width: 90%;
+        bottom: 22%;
+    }
+
+    .durée{
+        font-size: 14px; 
+    }
+
+    .curseurMusique{
+        width: 88%;
+    }
+
+    .iconesEnCoursHaut > .divEnCours > .infobulle{
+        display: initial;
+    }
+
+    .miniature{
+        width: 35px;
+        height: 35px;
+        margin-left: 8%;
+    }
+
+    #fileAttente{
+        font-size: 14px;
+        margin-right: 3%;
+    }
+
+
+}
+
+@keyframes rainbowMenu {           /* animation d'arc-en ciel lors du survol d'une catégorie du menu */
+    0%{color:red}
+    5%{color:coral}
+    10%{color:orange}
+    20%{color:yellow}
+    30%{color:greenyellow}
+    40%{color:green}
+    45%{color:seagreen}
+    50%{color:lightskyblue}
+    60%{color:darkcyan}
+    70%{color:midnightblue}
+    80%{color:indigo}
+    90%{color:violet}
+    100%{color:crimson}
+}
+
+@keyframes vibra {                   /* mouvement progressif lors du survol du logo de notifications */
+    0%{transform: rotate(20deg);}
+    20%{transform: rotate(-20deg);}
+    40%{transform: rotate(30deg);}
+    60%{transform: rotate(-30deg);}
+    80%{transform: rotate(40deg);}
+    90%{transform: rotate(-40deg);}
+    100%{transform: rotate(0deg);}
+}
+
+@keyframes rotate {                   /* mouvement de rotation infinie */
+    from {transform: rotate(0deg);} to {transform: rotate(360deg);}
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">                 
+    <head>
+        <!-- <base href="URL du site" target="_blank"> -->
+        <title>Interface Front de Deezer</title>
+        <link rel="icon" type="image/x-icon" href="DeezerFavicon.ico">
+        <link rel="stylesheet" type="text/css" href="Sheet.css">
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML,CSS, Deezer Interface">
+        <meta name="description" content="Ceci est un site vitrine reproduisant l'interface Front du site Deezer tout en le rendant responsive, dans un but de m'exercer à la construction d'interfaces avec les langages HTML et CSS ">
+        <meta name="author" content="Louis Cauvet">
+    </head>
+
+    <body>
+        <img id="imgLogo" src="deezerLogo.png" alt="Logo de Deezer">
+
+        <div class="bandeau">
+            <div class="flexMenu">
+                <div class="catMenu catChoisie">
+                    <img class="menuLogo" src="musique.png" alt="Logo de l'onglet Musique">
+                    <span class="titreCat catChoisie">Musique</span>
+                </div>
+                <div class="catMenu">
+                    <img class="menuLogo" src="micro.png" alt="Logo de l'onglet Podcast">
+                    <span class="titreCat">Podcasts</span>
+                </div>
+                <div class="catMenu">
+                    <img class="menuLogo" src="radio.png" alt="Logo de l'onglet Radios">
+                    <span class="titreCat">Radios</span>
+                </div>
+                <div class="catMenu">
+                    <img class="menuLogo" src="chaussure.png" alt="Logo de l'onglet Parcourir">
+                    <span class="titreCat">Parcourir</span>
+                </div>
+                <div class="catMenu">
+                    <img class="menuLogo" src="coeur.png" alt="Logo de l'onglet Favoris">
+                    <span class="titreCat">Favoris</span>
+                </div>
+
+                <div class="catPerso">
+                    <span class="titreCatPerso">Coups de coeur</span>
+                </div>
+                <div class="catPerso">
+                    <span class="titreCatPerso">Playlists</span>
+                </div>
+                <div class="catPerso">
+                    <span class="titreCatPerso">Albums</span>
+                </div>
+                <div class="catPerso">
+                    <span class="titreCatPerso">Artistes</span>
+                </div>
+                <div class="catPerso">
+                    <span class="titreCatPerso">Podcasts</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="principal">
+            <div class="barreSup">
+                <img id="logoRecherche" src="loupe.png" alt="Logo de l'onglet de recherche">
+                <input id="recherche" type="search" name="recherche" placeholder="Rechercher"> 
+                <img id="logoNotifs" src="cloche.png" alt="Logo de l'onglet des notifications">
+                <button id="logoCompte">
+                    <img id="photoProfil" src="compte.png" alt="photo de profil du compte">
+                </button>
+            </div>
+
+            <div class="principalContenu">
+                <h1>Flow, la bande-son de vos émotions</h1>
+                <h2>Un mix infini et personnalisé avec vos favoris et de belles découvertes</h2>
+                <div class="mixFlow">
+                    <div class="miniFlow">
+                        <img class="fondFlow" src="flow.png" alt="fond pour flow">
+                        <p id="texteFlow">flow</p>
+                        <h3>Flow</h3>
+                    </div>
+                    <div class="miniFlow">
+                        <div class="catFlow cat1">
+                            <img class="imgFlow" src="halteres.png" alt="illustration Flow Motivation">
+                        </div>
+                        <h3>Motivation</h3>
+                    </div>
+                    <div class="miniFlow">
+                        <div class="catFlow cat2">
+                            <img class="imgFlow" src="feuxdartifices.png" alt="illustration Flow Fete">
+                        </div>
+                        <h3>Fête</h3>
+                    </div>
+                    <div class="miniFlow">
+                        <div class="catFlow cat3">
+                            <img class="imgFlow" src="palmier.png" alt="illustration Flow Détente">
+                        </div>
+                        <h3>Détente</h3>
+                    </div>
+                    <div class="miniFlow">
+                        <div class="catFlow cat4">
+                            <img class="imgFlow" src="crepuscule.png" alt="illustration Flow Mélancolie">
+                        </div>
+                        <h3>Mélancolie</h3>
+                    </div>
+                    <div class="miniFlow">
+                        <div class="catFlow cat5">
+                            <img class="imgFlow" src="amour.png" alt="illustration Flow Romantisme">
+                        </div>
+                        <h3>Romantisme</h3>
+                    </div>
+                    <div class="miniFlow">
+                        <div class="catFlow cat6">
+                            <img class="imgFlow" src="lotus.png" alt="illustration Flow Relaxation">
+                        </div>
+                        <h3>Relaxation</h3>
+                    </div>
+                </div>
+
+                <div class="contenus">
+                    <div class="contenu">
+                        <h1>Pour vous</h1>
+                        <div class="multi-images">
+                            <div id="fondNouveautés" class="coin1 coin2">
+                                <p id="textePourVous">Mon top de juillet</p>
+                            </div>
+                            <img class="imgQuatuor coin3" src="MartinGarrix.PNG" alt="img MartinGarrix">
+                            <img class="imgQuatuor coin4" src="Marshmello.PNG" alt="img Marshmellow">
+                            <button class="boutonPlay">
+                                <img class="play" src="play.png" alt="img bouton play">
+                            </button>
+                        </div>
+                        <h3 class="commArtistes">Vos écoutes fréquentes ce mois-çi avec Martin Garrix, Marshmello...</h3>
+                    </div>
+                    <div class="contenu margeGauche">
+                        <h1>Écouté récemment</h1>
+                        <div class="multi-images">
+                            <img class="imgQuatuor coin1" src="GhostlyKisses.PNG" alt="img Ghostly Kisses">
+                            <img class="imgQuatuor coin2" src="Damso.PNG" alt="img Damso">
+                            <img class="imgQuatuor coin3" src="SofianePamart.PNG" alt="img Sofiane Pamart">
+                            <img class="imgQuatuor coin4" src="Nekfeu.PNG" alt="img Nekfeu">
+                            <button class="boutonPlay">
+                                <img class="play" src="play.png" alt="img bouton play">
+                            </button>
+                        </div>
+                        <h3 class="commArtistes">Avec Ghostly Kisses, Damso, Sofiane Pamart, Nekfeu...</h3>
+                    </div>
+                    <div class="contenu margeGauche">
+                        <h1>Albums</h1>
+                        <div class="multi-images">
+                            <img class="imgQuatuor coin1" src="disque_Coldplay.PNG" alt="img disque Coldplay">
+                            <img class="imgQuatuor coin2" src="disque_GreenMontana.PNG" alt="img disque Green Montana">
+                            <img class="imgQuatuor coin3" src="disque_Lonepsi.PNG" alt="img disque Lonepsi">
+                            <img class="imgQuatuor coin4" src="disque_SamBrookes.PNG" alt="img disque Disiz">
+                            <button class="boutonPlay">
+                                <img class="play" src="play.png" alt="img bouton play">
+                            </button>
+                        </div>
+                        <h3 class="commArtistes">Avec Coldplay, Green Montana, Lonepsi, Sam Brookes...</h3>
+                    </div>
+                    <div class="contenu margeGauche">
+                        <h1>Artistes</h1>
+                        <div class="multi-images">
+                            <img class="imgQuatuor coin1" src="Dinos.PNG" alt="img Dinos">
+                            <img class="imgQuatuor coin2" src="Coldplay.PNG" alt="img Coldplay">
+                            <img class="imgQuatuor coin3" src="PatrickWatson.PNG" alt="img Patrick Watson">
+                            <img class="imgQuatuor coin4" src="Disiz.PNG" alt="img Disiz">
+                            <button class="boutonPlay">
+                                <img class="play" src="play.png" alt="img bouton play">
+                            </button>
+                        </div>
+                        <h3 class="commArtistes">Avec Dinos, Coldplay, Patrick Watson, Disiz...</h3>
+                    </div>
+                </div>
+
+                <div class="enteteGenres">
+                    <h1>Genres</h1>
+                    <div class="navigation">
+                        <img class="précédent" src="gauche.png" alt="flèche de gauche">
+                        <img class="suivant" src="droite.png" alt="flèche de droite">
+                    </div>
+                </div>
+                <div class="contenus">
+                    <div class="genre">
+                        <img class="fondGenre" src="fondRap.jpg" alt="Fond du genre Rap">
+                        <div class="titreGenre">
+                            <p>Rap</p>
+                        </div>
+                    </div>
+                    <div class="genre margeGauche">
+                        <img class="fondGenre" src="fondElectro.jpg" alt="Fond du genre Electro">
+                        <div class="titreGenre">
+                            <p>Electro</p>
+                        </div>
+                    </div>
+                    <div class="genre margeGauche">
+                        <img class="fondGenre" src="fondAccoustique.jpg" alt="Fond du genre Accoustique">
+                        <div class="titreGenre">
+                            <p>Accoustique</p>
+                        </div>
+                    </div>
+                    <div class="genre margeGauche">
+                        <img class="fondGenre" src="fondVariété.jpg" alt="Fond du genre Variété Francaise">
+                        <div class="titreGenre">
+                            <p>Variété française</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="enCours">
+            <div class="playEnCours">
+                <div class="divEnCours" id="iconePrécédent">
+                    <img class="iconePlayEnCours" src="précédent.png" alt="logo musique précédente">
+                </div>
+                <div class="divEnCours divGros" id="iconeJouer">
+                    <img class="iconePlayEnCours" src="play_blanc.png" alt="logo jouer musique">
+                </div>
+                <div id="iconeSuivant" class="divEnCours">
+                    <img class="iconePlayEnCours" src="suivant.png" alt="logo musique suivante">
+                </div>
+            </div>
+
+            <div class="musiqueEnCours">
+                <div class="musiqueEnCoursHaut">
+                    <a id="titre" href="https://www.youtube.com/watch?v=vjncyiuwwXQ" target="_blank">Riverside</a> 
+                    <span> · </span>
+                    <a id="interprête" href="https://fr.wikipedia.org/wiki/Agnes_Obel" target="_blank">Agnes Obel</a>
+                    <div class="iconesEnCoursHaut">
+                        <div class="divEnCours cachéTel">
+                            <div class="infobulle">Afficher les paroles</div>
+                            <img class="iconeOptionEnCours" src="paroles.png" alt="logo paroles de la chanson">
+                        </div>
+                        <div class="divEnCours cachéTel">
+                            <div class="infobulle">Ajouter dans une playlist</div>
+                            <img class="iconeOptionEnCours" src="addition.png" alt="logo ajout dans une playlist">
+                        </div>
+                        <div class="divEnCours">
+                            <div class="infobulle">Ajouter aux favoris</div>
+                            <img class="iconeOptionEnCours" src="coeur.png" alt="logo ajout aux favoris">
+                        </div>
+                    </div>
+                </div>
+                <div class="musiqueEnCoursBas">
+                    <span class="durée">00:00</span>
+                    <div class="curseurMusique">
+                        <div class="rondCurseur"></div>
+                    </div>
+                    <span class="durée">03:50</span>
+                </div>
+            </div>
+
+            <div class="optionsEnCours">
+                <div class="divEnCours">
+                    <div class="infobulle">Chromecast</div>
+                    <img class="iconeOptionEnCours" src="chromecast.png" alt="logo chromecast">
+                </div>
+                <div class="divEnCours">
+                    <div class="infobulle">Ecouter en boucle</div>
+                    <img class="iconeOptionEnCours" src="boucle.png" alt="logo musique en boucle">
+                </div>
+                <div class="divEnCours">
+                    <div class="infobulle">Jouer aléatoirement</div>
+                    <img class="iconeOptionEnCours" src="croisement.png" alt="logo musique aléatoire">
+                </div>
+                <div class="divEnCours">
+                    <div class="infobulle">Changer le volume</div>
+                    <img class="iconeOptionEnCours" src="volume.png" alt="logo volume">
+                </div>
+                <div class="divEnCours">
+                    <div class="infobulle">Réglages</div>
+                    <img class="iconeOptionEnCours" src="égaliseur.png" alt="logo paramètres sonores">
+                </div>
+            </div>
+
+            <div class="attenteEnCours">
+                <div class="divAttente">
+                    <img class="miniature" src="Miniature.PNG" alt="miniature musique en cours">
+                    <span id="fileAttente">File d'attente</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="liens">
+            <h1 class="enteteLiens">Ressources utilisées pour ce site :</h1>
+            <div class="lien">
+                <img class="imgLien" src="musique.png" alt="Logo musique">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/la-musique" title="la musique icônes">La musique icônes créées par IYAHICON - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="micro.png" alt="Logo podcasts">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/microphone" title="microphone icônes">Microphone icônes créées par Freepik - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="radio.png" alt="Logo radios">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/radio" title="radio icônes">Radio icônes créées par Freepik - Flaticon </a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="chaussure.png" alt="Logo parcourir">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/fonctionnement" title="fonctionnement icônes">Fonctionnement icônes créées par Freepik - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="coeur.png" alt="Logo favoris">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/coeur" title="cœur icônes">Cœur icônes créées par Erifqi Zetiawan - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="cloche.png" alt="Logo notifications">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/notification" title="notification icônes">Notification icônes créées par Cuputo - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="compte_blanc.png" alt="Logo notifications">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/notification" title="notification icônes">Notification icônes créées par Cuputo - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="halteres.png" alt="Logo motivation">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/gym" title="gym icônes">Gym icônes créées par Freepik - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="feuxdartifices.png" alt="Logo fete">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/feu-dartifice" title="feu d'artifice icônes">Feu d'artifice icônes créées par Freepik - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="palmier.png" alt="Logo fete">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/paume" title="paume icônes">Paume icônes créées par Freepik - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="crepuscule.png" alt="Logo fete">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/lever-du-soleil" title="lever du soleil icônes">Lever du soleil icônes créées par Secret Studio - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="amour.png" alt="Logo romantisme">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/engagement" title="engagement icônes">Engagement icônes créées par Freepik - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="lotus.png" alt="Logo relaxation">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/lotus" title="lotus icônes">Lotus icônes créées par Freepik - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="play_blanc.png" alt="Logo play">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/bouton-jouer" title="bouton jouer icônes">Bouton jouer icônes créées par Freepik - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="gauche.png" alt="Logo flèche de gauche">
+                <span><a class="urlLien" href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Handicon - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="précédent.png" alt="Logo musique précédente">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/precedent" title="précédent icônes">Précédent icônes créées par feen - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="chromecast.png" alt="Logo chromecast">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/chromecast" title="chromecast icônes">Chromecast icônes créées par Freepik - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="boucle.png" alt="Logo jouer en boucle">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/boucle" title="boucle icônes">Boucle icônes créées par Gabriele Malaspina - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="croisement.png" alt="Logo jouer aléatoire">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/deux" title="deux icônes">Deux icônes créées par Freepik - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="volume.png" alt="Logo volume">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/le-volume" title="le volume icônes">Le volume icônes créées par apien - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="égaliseur.png" alt="Logo paramètres sonores">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/controle-de-legaliseur" title="contrôle de l'égaliseur icônes">Contrôle de l'égaliseur icônes créées par zafdesign - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="paroles.png" alt="Logo paroles">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/entretien" title="entretien icônes">Entretien icônes créées par Freepik - Flaticon</a></span>
+            </div>
+            <div class="lien">
+                <img class="imgLien" src="addition.png" alt="Logo ajout">
+                <span><a class="urlLien" href="https://www.flaticon.com/fr/icones-gratuites/une-addition" title="une addition icônes">Une addition icônes créées par Muhammad Ali - Flaticon</a></span>
+            </div>
+        </div>
+
+    </body>
+</html>
