@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- <base href="URL du site" target="_blank"> -->
+        <title>Entrainement JS Louis CAUVET : la liste de tâches</title>
+        <link rel="stylesheet" type="text/css" href="todoListe_style.css">
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML,CSS,JS,liste de tâches">
+        <meta name="description" content="Entrainement personnel au JavaScript consistant à développer une liste de tâches ">
+        <meta name="author" content="Louis Cauvet">
+    </head>
+
+    <body>
+        <div id="zoneTitre">
+            <h1 id="titre">Liste de tâches en ligne</h1>
+        </div>
+
+        <div id="zoneContenu">
+            <div id="contenuGeneral">
+                <div id="ligneSaisie">
+                    <input id="champSaisie" type="text" name="zoneSaisie" placeholder="Ecrivez votre tâche ici"> 
+                    <button id="boutonValider" type="button" onclick="ajouterTache()">Ajouter</button>      
+                </div>    
+    
+                <div id="affichageTaches">
+                    <ul id="listeTaches">
+                    </ul>
+                </div>  
+            </div> 
+        </div>
+
+        <script src="todoListe_script.js" type="text/javascript"></script>
+        <noscript>Désolé, votre navigateur ne prend pas en charge le Javascript</noscript>
+    </body>
+</html>
